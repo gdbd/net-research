@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{54917ebf-1168-4233-a6ae-ab8a3cb662be}"
+       Name="Initiator"
+       DisplayName="$Resources:TestApplication,InitiatorTitle;"
+       Type="User"
+       Required="TRUE"
+       Group="TestApplication Columns"/>
+
+  <Field
+     ID="{A5F3C350-69C2-49A0-A69E-7C6CE51BC600}"
+     Name="Approvers"
+     DisplayName="$Resources:TestApplication,ApproversTitle"
+     Type="UserMulti"
+     Mult="TRUE"
+     Required="FALSE"
+     Group="TestApplication Columns"/> 
+  
+  <Field
+     ID="{1E0D5656-3A91-4CB7-8232-EBFD308D342C}"
+     Name="ParentContact"
+     DisplayName="$Resources:TestApplication,ParentContactTitle"
+     Type="Lookup"
+     List="{CA490FBD-A729-4AB7-A4DF-1AE92F477E81}"
+     Required="FALSE"
+     Group="TestApplication Columns"/>
+
+  <Field
+   ID="{0B0CE27D-1E05-4751-A8A0-5A3324A56324}"
+   Name="ContractName"
+   DisplayName="$Resources:TestApplication,ContractName"
+   Type="Text"
+   Required="FALSE"
+   Group="TestApplication Columns"/>
+  
+</Elements>

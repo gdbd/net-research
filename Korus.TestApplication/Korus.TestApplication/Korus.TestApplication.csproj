@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6791A1DA-713E-490B-8DC4-193C76EBFDDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Korus.TestApplication</RootNamespace>
+    <AssemblyName>Korus.TestApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ContentTypeIds.cs" />
+    <Compile Include="Common\Groups.cs" />
+    <Compile Include="Common\Logger.cs" />
+    <Compile Include="Common\EventReceiverHelper.cs" />
+    <Compile Include="Common\Fields.cs" />
+    <Compile Include="Common\Numerator.cs" />
+    <Compile Include="Common\ResourceAccessor.cs" />
+    <Compile Include="Common\Urls.cs" />
+    <Compile Include="EventReceivers\ContractsDocSetReceiver.cs" />
+    <Compile Include="Features\TestApplication\TestApplication.EventReceiver.cs">
+      <DependentUpon>TestApplication.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\TestApplication.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestApplication.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Columns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1557db88-1db2-407a-92f7-be9b36d51ee2}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{160ae081-9bec-462d-9f77-bc56cc3c152c}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\TestApplication\TestApplication.feature">
+      <FeatureId>{35489086-6ebf-4396-8c15-784cdbdd11d8}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Contracts\ContractsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33be6d47-88f3-4f76-af79-88f32b4837d9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Contracts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a634892-01ce-4af1-aff1-d09a6ea0ed77}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{3cd25029-7705-451f-af45-c4fe5125970f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b92cea24-0240-4165-9988-5e0f1d9cfbb3}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{987f3316-72fb-4ea3-a16b-cf21886a4139}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Columns\Elements.xml" />
+    <Content Include="ContentTypes\Elements.xml" />
+    <Content Include="Features\TestApplication\TestApplication.Template.xml">
+      <DependentUpon>TestApplication.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lists\Contracts\ContractsInstance\Elements.xml" />
+    <Content Include="Pages\docsethomepage.aspx" />
+    <Content Include="Lists\Contracts\EditDlg.htm" />
+    <Content Include="Lists\Contracts\Elements.xml" />
+    <Content Include="Lists\Contracts\FileDlg.htm" />
+    <Content Include="Lists\Contracts\Repair.aspx" />
+    <Content Include="Lists\Contracts\Schema.xml" />
+    <Content Include="Lists\Contracts\Upload.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Resources\TestApplication.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestApplication.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

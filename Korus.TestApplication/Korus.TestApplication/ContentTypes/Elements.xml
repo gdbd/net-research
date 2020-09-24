@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document Set (0x0120D520) -->
+  <ContentType ID="0x0120D5200008EF490DFCA240EEB227A81A4FF9269D"
+               Name="Contract"
+               Group="TestApplication Content Types"
+               Description=""
+               Inherits="TRUE"
+               ProgId="SharePoint.DocumentSet"
+               Version="0" Overwrite="TRUE">
+
+    <Folder TargetName="_cts/Contract" />
+
+    
+    <FieldRefs>
+
+      <FieldRef
+       ID="{54917ebf-1168-4233-a6ae-ab8a3cb662be}"
+       Name="Initiator"
+       DisplayName="$Resources:TestApplication,InitiatorTitle;"
+       Required="TRUE" />
+
+      <FieldRef
+         ID="{A5F3C350-69C2-49A0-A69E-7C6CE51BC600}"
+         Name="Approvers"
+         DisplayName="$Resources:TestApplication,ApproversTitle"
+         Required="FALSE" />
+
+      <FieldRef
+         ID="{1E0D5656-3A91-4CB7-8232-EBFD308D342C}"
+         Name="ParentContact"
+         DisplayName="$Resources:TestApplication,ParentContactTitle"
+         Required="FALSE" />
+
+
+      <FieldRef
+       ID="{0B0CE27D-1E05-4751-A8A0-5A3324A56324}"
+       Name="ContractName"
+       DisplayName="$Resources:TestApplication,ContractName"
+       Required="FALSE" />
+      
+    </FieldRefs>
+
+    
+  </ContentType>
+</Elements>

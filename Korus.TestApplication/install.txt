@@ -1,0 +1,2 @@
+.\CommonDeployment.ps1 -Url http://shp2016/sites/5 -Solution:.\Korus.TestApplication.wsp -Reinstall -SkipActivation
+.\CommonDeployment.ps1 -Url http://shp2016/sites/5 -Solution:.\Korus.TestApplication.wsp -Activate

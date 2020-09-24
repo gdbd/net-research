@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3cd25029-7705-451f-af45-c4fe5125970f" solutionId="3cd25029-7705-451f-af45-c4fe5125970f" resetWebServer="false" sharePointProductVersion="16.0" name="Korus.TestApplication" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="35489086-6ebf-4396-8c15-784cdbdd11d8" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="987f3316-72fb-4ea3-a16b-cf21886a4139" />
+  </projectItems>
+</package>

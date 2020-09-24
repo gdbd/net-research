@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korus.TestApplication", "Korus.TestApplication\Korus.TestApplication.csproj", "{6791A1DA-713E-490B-8DC4-193C76EBFDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korus.TestApplication.ContractLoader", "Korus.TestApplication.ContractLoader\Korus.TestApplication.ContractLoader.csproj", "{B300AC8F-16B4-4CDE-AA32-F585C63FD889}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6791A1DA-713E-490B-8DC4-193C76EBFDDD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B300AC8F-16B4-4CDE-AA32-F585C63FD889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B300AC8F-16B4-4CDE-AA32-F585C63FD889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B300AC8F-16B4-4CDE-AA32-F585C63FD889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B300AC8F-16B4-4CDE-AA32-F585C63FD889}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gdbd.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Korus.TestApplication.ContractLoader\\Korus.TestApplication.ContractLoader.csproj
+		SccProjectName1 = Korus.TestApplication.ContractLoader
+		SccLocalPath1 = Korus.TestApplication.ContractLoader
+		SccProjectUniqueName2 = Korus.TestApplication\\Korus.TestApplication.csproj
+		SccProjectName2 = Korus.TestApplication
+		SccLocalPath2 = Korus.TestApplication
+	EndGlobalSection
+EndGlobal
